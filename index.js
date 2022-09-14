@@ -2,6 +2,9 @@ const monkeyFace = document.querySelector('.monkey-face');
 const monkeyHand = document.querySelector('.monkey-hand');
 const input = document.getElementById('input');
 
+let degree = 13
+let inputPrevLenght = [];
+
 const showMonkeyHand = () =>{
   monkeyHand.style.transform='translateY(35%)'
 }
@@ -15,8 +18,6 @@ document.addEventListener('click',(e)=>{
   }
 });
 
-let degree = 13
-let inputPrevLenght = [];
 
 input.addEventListener('input',(e)=>{
   let currentInputLength = String(e.target.value).length;
