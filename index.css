@@ -25,6 +25,37 @@ body{
   border-radius: .4rem;
   position: relative;
 }
+.monkey-thought{
+  opacity: 0;
+  position: absolute;
+  top: -2rem;
+  right: 3.4rem;
+  transform: rotateZ(250deg);
+  display: flex;
+  flex-direction: column;
+  transition: opacity .2s ease-in-out;
+}
+.buble-1{
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: hsl(167, 92%, 23%);
+  position: relative;
+}
+.monkey-comment{
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  transform: rotateZ(103deg);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: hsl(167, 92%, 23%);
+  color: white;
+  font-family: 'Rokkitt', serif;
+  font-size: 1.6rem;
+}
 .img-wrapper{
   display: flex;
   align-items: center;
@@ -60,19 +91,20 @@ body{
   border-top-right-radius: 3rem;
   height: 0.4rem;
   position: relative;
-  top: -0.3rem;
+  transform: translateY(-2px);
   width: 100%;
-  background-color: rgb(112,73,26);
+  background-color: hsl(33, 62%, 27%);
+  transition: transform .1s ease-in;
 }
 .eye-ball{
   width: 1.5rem;
   height: 1.5rem;
-  background-color: rgb(112,73,26);
+  background-color: hsl(33, 62%, 27%);
   border-radius: 50%;
 }
 .img-wrapper .monkey-hand{
   position: absolute;
-  transform: translateY(120%);
+  transform: translateY(130%);
   transition: .7s;
 }
 
@@ -100,7 +132,7 @@ input{
   border: none;
   border-radius: .4rem;
   font-family: 'Rokkitt', serif;
-  box-shadow: 0px 0px 13px 0px rgba(150, 145, 145, 0.438);
+  box-shadow: 0px 0px 13px 0px hsla(0, 2%, 58%, 0.438);
 }
 input:focus{
   outline: none;
@@ -132,15 +164,12 @@ button{
   }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:450px) {
   .main-wrapper{
     width: 300px;
   }
-  .img-wrapper{
-    width: 10rem;
-  }
   .monkey-face{
-    width: 7rem;
+    width: 8rem;
   }
   .monkey-face img{
     width: 100%;
@@ -148,13 +177,28 @@ button{
   .eyes-wrapper{
     width: 63%;
     top: 2.5rem;
-    left: 1.3rem;
+    left: 1.43rem;
     justify-content: space-between;
   }
+  .eye-brow{
+    top: 0rem;
+  }
   .monkey-hand{
-    width: 4.2rem;
+    width: 5.2rem;
   }
   input{
     width: 14rem;
+  }
+  .monkey-thought{
+    right: 2.3rem;
+  }
+  .buble-1{
+    width: .7rem;
+    height: .7rem;
+  }
+  .monkey-comment{
+    font-size: 1.3rem;
+    width: 5rem;
+    height: 5rem;
   }
 }

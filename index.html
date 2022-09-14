@@ -11,6 +11,12 @@
 </style>
 <body>
   <div class="main-wrapper">
+    <div class="monkey-thought">
+      <div class="buble-1"></div>
+      <div class="monkey-comment">
+        <p>is it a email?</p>
+      </div>
+    </div>
     <div class="img-wrapper">
       <div class="monkey-face">
         <img src="./Images/monkey.png" alt="face">
@@ -28,9 +34,9 @@
       <img class="monkey-hand" src="./Images/hand.png" alt="hand">
     </div>
     <form action="">
-      <input type="email" id="input" placeholder="john@gmail.com" autocomplete="off" required>
-      <input type="password" placeholder="password" id="password" required onfocus="showMonkeyHand()">
-      <button>submit</button>
+      <input type="email" id="email" placeholder="john@gmail.com" autocomplete="off" required>
+      <input type="password" placeholder="password" id="password"  onfocus="showMonkeyHand()" required>
+      <button id="submit-btn" type="submit">submit</button>
     </form>
   </div>
 </body>
