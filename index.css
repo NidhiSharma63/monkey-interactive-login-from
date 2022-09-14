@@ -128,11 +128,12 @@ button{
   }
   .eyes-wrapper{
     width: 63%;
-    top: 2.3rem;
-    left: 1.85rem;
+    top: 2.5rem;
+    left: 1.3rem;
+    justify-content: space-between;
   }
   .monkey-hand{
-    width: 5.2rem;
+    width: 4.2rem;
   }
   input{
     width: 14rem;
