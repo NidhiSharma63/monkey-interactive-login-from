@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -81,6 +82,7 @@ input{
   font-size: 1.2rem;
   border: none;
   border-radius: .4rem;
+  font-family: 'Rokkitt', serif;
   box-shadow: 0px 0px 13px 0px rgba(150, 145, 145, 0.438);
 }
 input:focus{
