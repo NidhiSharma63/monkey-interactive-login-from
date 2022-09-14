@@ -1,5 +1,6 @@
-const password = document.getElementById('password');
+const monkeyFace = document.querySelector('.monkey-face');
 const monkeyHand = document.querySelector('.monkey-hand');
+const input = document.getElementById('input');
 
 const showMonkeyHand = () =>{
   monkeyHand.style.transform='translateY(35%)'
@@ -9,4 +10,20 @@ document.addEventListener('click',(e)=>{
   if(e.target.type!=='password'){
     monkeyHand.style.transform='translateY(120%)'
   }
+});
+
+let degree = 13
+let inputPrevLenght = [];
+
+input.addEventListener('input',(e)=>{
+  let currentInputLength = String(e.target.value).length;
+  let decrementInInputValue = inputPrevLenght.includes(currentInputLength);
+  if(!decrementInInputValue && degree>= -10){
+    degree-=1
+    inputPrevLenght.push(currentInputLength)
+  }
+  if(decrementInInputValue){
+    degree+=1
+  }
+  monkeyFace.style.transform = `perspective(800px) rotateZ(${degree}deg)`
 })
