@@ -9,10 +9,16 @@ Interactive-monkey-login-form responsive for all devices.
 when user enter the email the monkey rotate his face and follow the user steps.
 when user enter the password then monkey cover his eyes with his hand that's look so impressive.
 
+
+[visit now](https://nidhisharma63.github.io/monkey-interactive-login-from/)
+
+
 ## here it's
+![Alt Text](./Images/readme/monkey.gif)
+
 <img width='100%' src="./Images/readme/monkey1.png"/>
 <img width='100%' src="./Images/readme/monkey3.png"/> 
 <img width='100%' src="./Images/readme/monkey2.png"/>
 
-### [Check now](https://nidhisharma63.github.io/monkey-interactive-login-from/).
+### [visit now](https://nidhisharma63.github.io/monkey-interactive-login-from/).
 
