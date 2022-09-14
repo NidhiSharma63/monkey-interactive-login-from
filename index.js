@@ -25,7 +25,7 @@ input.addEventListener('input',(e)=>{
     degree-=1
     inputPrevLenght.push(currentInputLength)
   }
-  if(decrementInInputValue){
+  if(decrementInInputValue && degree<13){
     degree+=1
   }
   monkeyFace.style.transform = `perspective(800px) rotateZ(${degree}deg)`
