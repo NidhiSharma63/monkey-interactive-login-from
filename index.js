@@ -10,6 +10,9 @@ document.addEventListener('click',(e)=>{
   if(e.target.type!=='password'){
     monkeyHand.style.transform='translateY(120%)'
   }
+  if(e.target.type!=='email'){
+   monkeyFace.style.transform = `perspective(800px) rotateZ(0deg)`
+  }
 });
 
 let degree = 13
